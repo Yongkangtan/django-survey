@@ -39,6 +39,8 @@ The latest version still compatible with python 2.7 is 1.2.1.
 
 # Getting started
 
+## Adding django-survey-and-report to your project
+
 Add `django-survey-and-report` to your requirements and get it with pip.
 
 	echo 'django-survey-and-report' > requirements.txt
@@ -66,8 +68,26 @@ Note: you can use whatever you wish as the URL prefix.
 To uninstall `django-survey-and-report`, simply comment out or remove the
 'survey' line in your `INSTALLED_APPS`.
 
+## Prerequisite for reporting
+
 If you want to use the pdf rendering with the Sankey's diagram generation
-you will have to install python-tk (for python 2.7) or python3-tk (for python 3.x).
+you will have to install some dependency first.
+
+### Linux
+
+You need python-tk (for python 2.7)
+
+    sudo apt install python-tk
+
+Or python3-tk (for python 3.x)
+
+    sudo apt install python3-tk
+
+## Mac
+
+You will need `freetype` for matplotlib :
+
+    brew install freetype
 
 # Making a survey
 
